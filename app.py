@@ -9,4 +9,4 @@ x = np.array(x).reshape(-1, 1)
 if st.button('Predict'):
   st.text('Revenue Prediction')
   y_pred = pickled_model.predict(x)
-  st.success(y_pred)
+  st.success(f'Revenue: ${y_pred[0]:.2f}')
