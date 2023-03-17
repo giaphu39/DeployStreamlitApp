@@ -1,6 +1,7 @@
 import streamlit as st
 import pickle
 import sklearn
+import numpy as np
 pickled_model = pickle.load(open('model.pickle', 'rb'))
 st.title('Revenue Prediction')
 x = st.number_input('Input Temperature')
